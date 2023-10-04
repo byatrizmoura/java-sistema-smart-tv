@@ -13,23 +13,22 @@ public class Usuario {
         System.out.println("Novo Status -> TV ligada? " + smartTv.ligada);
 
 
-        smartTv.abaixar();
-        smartTv.abaixar();
-        smartTv.abaixar();
-        smartTv.aumentar();
+        smartTv.abaixarVolume();
+        smartTv.abaixarVolume();
+        smartTv.abaixarVolume();
+        smartTv.aumentarVolume();
         System.out.println("Novo Status -> Volume atual : " + smartTv.volume);
 
-        smartTv.avancar();
-        smartTv.avancar();
-        smartTv.avancar();
-        smartTv.avancar();
-        smartTv.retornar();
+        smartTv.avancarCanal();
+        smartTv.avancarCanal();
+        smartTv.avancarCanal();
+        smartTv.avancarCanal();
+        smartTv.retornarCanal();
         System.out.println("Novo Status -> Canal atual : " + smartTv.canal);
 
-
-
-    
-
-
+        smartTv.mudarCanal(13);
+        System.out.println("Novo Status -> Canal atual : " + smartTv.canal);
     }
+
+
 }
